@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="cellProduct" rowHeight="65" id="kH8-1U-UpM" customClass="CeldasGralesTableViewCell" customModule="Admin_Products" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kH8-1U-UpM" id="qIg-Su-5vp">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VaS-on-Kj6">
+                        <rect key="frame" x="5" y="5" width="344" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0f-nM-Uha">
+                                <rect key="frame" x="8" y="0.0" width="328" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Tpf-xV-0S8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Observaciones" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-Z6-P2p">
+                                <rect key="frame" x="8" y="26" width="328" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="zTi-qh-UNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kei-Z6-P2p" firstAttribute="leading" secondItem="VaS-on-Kj6" secondAttribute="leading" constant="8" id="2fs-wZ-XjF"/>
+                            <constraint firstItem="X0f-nM-Uha" firstAttribute="leading" secondItem="VaS-on-Kj6" secondAttribute="leading" constant="8" id="AIJ-f4-fIK"/>
+                            <constraint firstAttribute="trailing" secondItem="X0f-nM-Uha" secondAttribute="trailing" constant="8" id="LAb-y2-Ma4"/>
+                            <constraint firstAttribute="bottom" secondItem="kei-Z6-P2p" secondAttribute="bottom" constant="9" id="gA4-QH-Ra7"/>
+                            <constraint firstAttribute="trailing" secondItem="kei-Z6-P2p" secondAttribute="trailing" constant="8" id="tiP-7V-qIp"/>
+                            <constraint firstItem="kei-Z6-P2p" firstAttribute="top" secondItem="X0f-nM-Uha" secondAttribute="bottom" constant="5" id="wEa-8x-kku"/>
+                            <constraint firstItem="X0f-nM-Uha" firstAttribute="top" secondItem="VaS-on-Kj6" secondAttribute="top" id="yo1-ME-Fw9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="VaS-on-Kj6" firstAttribute="leading" secondItem="qIg-Su-5vp" secondAttribute="leading" constant="5" id="7CF-Y6-fPq"/>
+                    <constraint firstAttribute="trailing" secondItem="VaS-on-Kj6" secondAttribute="trailing" constant="5" id="J6T-U0-mCg"/>
+                    <constraint firstAttribute="bottom" secondItem="VaS-on-Kj6" secondAttribute="bottom" constant="5" id="SFd-tv-3Mm"/>
+                    <constraint firstItem="VaS-on-Kj6" firstAttribute="top" secondItem="qIg-Su-5vp" secondAttribute="top" constant="5" id="e1b-QM-xCz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblNombreParametro" destination="X0f-nM-Uha" id="3xW-7Z-HN3"/>
+                <outlet property="lblParametro" destination="kei-Z6-P2p" id="vLx-OH-PaE"/>
+                <outlet property="viewContentProducts" destination="VaS-on-Kj6" id="KAg-vl-5Md"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="137.61160714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

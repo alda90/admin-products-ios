@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCatalogo" rowHeight="59" id="PK3-UG-UwZ" customClass="CeldasGralesTableViewCell" customModule="Admin_Movilidad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PK3-UG-UwZ" id="iwD-b5-sMZ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFm-3y-NtL">
+                        <rect key="frame" x="71" y="19" width="323" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZe-gN-7hd">
+                        <rect key="frame" x="16" y="7" width="45" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="m5Y-CT-O9Z"/>
+                            <constraint firstAttribute="width" constant="45" id="sKj-eG-Xuh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="BZe-gN-7hd" firstAttribute="leading" secondItem="iwD-b5-sMZ" secondAttribute="leading" constant="16" id="8sn-ya-h7A"/>
+                    <constraint firstItem="UFm-3y-NtL" firstAttribute="trailing" secondItem="iwD-b5-sMZ" secondAttribute="trailingMargin" id="FDv-Kh-f2V"/>
+                    <constraint firstItem="BZe-gN-7hd" firstAttribute="top" secondItem="iwD-b5-sMZ" secondAttribute="top" constant="7" id="UA7-ma-eA0"/>
+                    <constraint firstAttribute="bottom" secondItem="BZe-gN-7hd" secondAttribute="bottom" constant="7" id="YUG-bA-S9c"/>
+                    <constraint firstItem="UFm-3y-NtL" firstAttribute="top" secondItem="iwD-b5-sMZ" secondAttribute="topMargin" constant="8" id="YhF-6m-o8l"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UFm-3y-NtL" secondAttribute="bottom" constant="8" id="ouO-yU-aon"/>
+                    <constraint firstItem="UFm-3y-NtL" firstAttribute="leading" secondItem="BZe-gN-7hd" secondAttribute="trailing" constant="10" id="xuZ-Ad-obM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblCatalogo" destination="UFm-3y-NtL" id="FXv-Tg-eOU"/>
+                <outlet property="viewCatalogo" destination="BZe-gN-7hd" id="8lv-vG-D3u"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="154"/>
+        </tableViewCell>
+    </objects>
+</document>

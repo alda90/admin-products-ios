@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewProductView" customModule="Admin_Products" customModuleProvider="target">
+            <connections>
+                <outlet property="btnActions" destination="NRl-vF-iDD" id="UFO-2m-jI1"/>
+                <outlet property="tableView" destination="R0W-Re-EFl" id="jE4-su-361"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewInicio" destination="i5M-Pr-FkT" id="yv7-Qw-ovs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondoLogin" translatesAutoresizingMaskIntoConstraints="NO" id="6ae-wm-GAZ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R0W-Re-EFl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="733"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRl-vF-iDD" customClass="appCustomButton" customModule="Admin_Products" customModuleProvider="target">
+                    <rect key="frame" x="64" y="797" width="286" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="Hsg-na-7uf"/>
+                    </constraints>
+                    <state key="normal" title="Registrar">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="actionRegistrar:" destination="-1" eventType="touchUpInside" id="Q3t-nM-t59"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6ae-wm-GAZ" secondAttribute="trailing" id="9gt-3x-a02"/>
+                <constraint firstItem="6ae-wm-GAZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GEf-yO-JeK"/>
+                <constraint firstItem="NRl-vF-iDD" firstAttribute="top" secondItem="R0W-Re-EFl" secondAttribute="bottom" constant="20" id="JbX-1M-d5h"/>
+                <constraint firstItem="R0W-Re-EFl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jej-kH-bj3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NRl-vF-iDD" secondAttribute="bottom" constant="11" id="K5a-l8-vOt"/>
+                <constraint firstItem="R0W-Re-EFl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L65-Vc-HFn"/>
+                <constraint firstAttribute="bottom" secondItem="6ae-wm-GAZ" secondAttribute="bottom" id="gBJ-uQ-LvT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NRl-vF-iDD" secondAttribute="trailing" constant="64" id="l56-Hh-ILy"/>
+                <constraint firstItem="NRl-vF-iDD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="rNZ-Jb-H4j"/>
+                <constraint firstItem="6ae-wm-GAZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="smX-rZ-Qsb"/>
+                <constraint firstItem="R0W-Re-EFl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tpe-0b-jPK"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fondoLogin" width="415.5" height="640"/>
+    </resources>
+</document>
